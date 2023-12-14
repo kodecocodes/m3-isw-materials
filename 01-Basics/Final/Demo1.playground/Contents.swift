@@ -3,23 +3,23 @@ let int2: Int = 10
 
 // int1 = 6
 
-var intSum = int1 + int2
-var intSubtract = int2 - int1
-var intMultiply = int1 * int2
-var intDivide = int2 / int1
+let intSum = int1 + int2
+let intSubtract = int2 - int1
+let intMultiply = int1 * int2
+let intDivide = int2 / int1
 
-let float1: Float = 6
-let float2: Float = 11
+let float1: Float = 6.0
+let float2: Float = 11.0
 
-var floatSum = float1 + float2
-var floatSubtract = float2 - float1
-var floatMultiply = float1 * float2
-var floatDivide = float2 / float1
+let floatSum = float1 + float2
+let floatSubtract = float2 - float1
+let floatMultiply = float1 * float2
+let floatDivide = float2 / float1
 
 let double1 = 6.0
 let double2: Double = 11.0
 
-var doubleSum = double1 + double2
-var doubleSubtract = double2 - double1
-var doubleMultiply = double1 * double2
-var doubleDivide = double2 / double1
+let doubleSum = double1 + double2
+let doubleSubtract = double2 - double1
+let doubleMultiply = double1 * double2
+let doubleDivide = double2 / double1
