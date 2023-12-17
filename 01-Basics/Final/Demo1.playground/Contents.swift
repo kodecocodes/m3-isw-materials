@@ -1,7 +1,11 @@
-let int1 = 5
-let int2: Int = 10
+let int1: Int = 5
+var int2 = 9
 
 // int1 = 6
+int2 = 10
+
+let boolNumbersAreEqual: Bool = int1 == int2
+let boolNumbersAreAscending = int1 < int2
 
 let intSum = int1 + int2
 let intSubtract = int2 - int1
