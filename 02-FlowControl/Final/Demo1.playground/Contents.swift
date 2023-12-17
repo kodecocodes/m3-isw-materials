@@ -1,5 +1,5 @@
-let int1 = 5
-let int2: Int = 10
+let int1 = 10
+let int2: Int = 5
 let intOperation = "+"
 
 var result = 0
@@ -9,13 +9,13 @@ if intOperation == "+" {
   result = int1 + int2
   resultMessage = "Integer sum of \(int1) and \(int2) is: \(result)"
 } else if intOperation == "-" {
-  result = int2 - int1
-  resultMessage = "Integer subtraction of \(int1) from \(int2) is: \(result)"
+  result = int1 - int2
+  resultMessage = "Integer subtraction of \(int1) and \(int2) is: \(result)"
 } else if intOperation == "*" {
   result = int1 * int2
   resultMessage = "Integer multiplication of \(int1) and \(int2) is: \(result)"
 } else if intOperation == "/" {
-  result = int2 / int1
+  result = int1 / int2
   resultMessage = "Integer division of \(int1) and \(int2) is: \(result)"
 } else {
   resultMessage = "Unknown Operation"
@@ -30,13 +30,13 @@ case "+":
   result = int1 + int2
   resultMessage = "Integer sum of \(int1) and \(int2) is: \(result)"
 case "-":
-  result = int2 - int1
-  resultMessage = "Integer subtraction of \(int1) from \(int2) is: \(result)"
+  result = int1 - int2
+  resultMessage = "Integer subtraction of \(int1) and \(int2) is: \(result)"
 case "*":
   result = int1 * int2
   resultMessage = "Integer multiplication of \(int1) and \(int2) is: \(result)"
 case "/":
-  result = int2 / int1
+  result = int1 / int2
   resultMessage = "Integer division of \(int1) and \(int2) is: \(result)"
 default:
   resultMessage = "Unknown Operation"
