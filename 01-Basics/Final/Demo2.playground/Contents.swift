@@ -1,6 +1,6 @@
 let welcomeMessage_part1 = "Hello "
 let username = "Raymond"
-let welcomeMessage_part2 = ", good to see you today."
+let welcomeMessage_part2 = ", it's good to see you today."
 
 let message = welcomeMessage_part1 + username + welcomeMessage_part2
 
@@ -10,7 +10,8 @@ print(message.uppercased())
 print(message.lowercased())
 print(message.replacing("Hello", with: "Greetings"))
 
-print("Hello \(username), good to see you today.")
+let message2 = "Hello \(username), it's good to see you today."
+print(message2)
 
 // ----------------
 
