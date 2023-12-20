@@ -1,5 +1,5 @@
 func calculateSum(minValue: Int, maxValue: Int) -> Int {
-  var timer = MachineTimer()
+  let timer = MachineTimer()
   var sum = 0
   defer {
     print("\(timer.mark())μs for result \(sum)")
@@ -20,7 +20,7 @@ calculateSum(minValue: 0, maxValue: 1_000_000) // 13.1 seconds
 
 
 func calculateSum_optimized(minValue: Int, maxValue: Int) -> Int {
-  var timer = MachineTimer()
+  let timer = MachineTimer()
   var sum = 0
   defer {
     print("\(timer.mark())μs for result \(sum)")

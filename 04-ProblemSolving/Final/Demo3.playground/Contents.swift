@@ -1,7 +1,7 @@
 func calculateSum(minValue: Int, maxValue: Int) -> Double {
   var sum: Double = 0
-  var doubleVal1 = Double(minValue)
-  var doubleVal2 = Double(maxValue)
+  let doubleVal1 = Double(minValue)
+  let doubleVal2 = Double(maxValue)
   sum = (doubleVal1 + doubleVal2) / 2.0
   sum *= (doubleVal2 - doubleVal1 + 1.0)
   return sum
