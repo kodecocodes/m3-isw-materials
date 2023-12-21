@@ -1,12 +1,14 @@
 func calculateSum(minValue: Int, maxValue: Int) -> Int {
-  let timer = MachineTimer()
   var sum = 0
-  defer {
-    print("\(timer.mark())μs for result \(sum)")
+  let timeMeasure = ContinuousClock().measure {
+
+    for i in minValue...maxValue {
+      sum += i
+    }
+
   }
-  for i in minValue...maxValue {
-    sum += i
-  }
+  
+  print("\(timeMeasure) for result \(sum)")
   return sum
 }
 
@@ -20,13 +22,13 @@ calculateSum(minValue: 0, maxValue: 1_000_000) // 13.1 seconds
 
 
 func calculateSum_optimized(minValue: Int, maxValue: Int) -> Int {
-  let timer = MachineTimer()
   var sum = 0
-  defer {
-    print("\(timer.mark())μs for result \(sum)")
+  let timeMeasure = ContinuousClock().measure {
+    sum = (minValue + maxValue) / 2
+    sum *= (maxValue - minValue + 1)
   }
-  sum = (minValue + maxValue) / 2
-  sum *= (maxValue - minValue + 1)
+
+  print("\(timeMeasure) for result \(sum)")
   return sum
 }
 
