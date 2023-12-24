@@ -1,19 +1,24 @@
 struct Contact {
   var name: String
   var phone: String
+
+  init(name: String, phone: String) {
+    self.name = name
+    self.phone = phone
+  }
 }
 
 class PhoneBook {
-  private var contacts: [Contact] = []
+  private var storedContacts: [Contact] = []
 
-  func saveContact(_ contact: Contact) {
-    contacts.append(contact)
+  func save(contact: Contact) {
+    storedContacts.append(contact)
   }
 
-  func findContact(keyword: String) -> [Contact] {
+  func search(keyword: String) -> [Contact] {
     var results: [Contact] = []
 
-    for contact in contacts {
+    for contact in storedContacts {
       if contact.name.contains(keyword) ||
           contact.phone.contains(keyword) {
         results.append(contact)
@@ -26,12 +31,18 @@ class PhoneBook {
 
 var phoneBookInstance = PhoneBook()
 var ehabContact = Contact(name: "Ehab Amer", phone: "0123456789")
-phoneBookInstance.saveContact(ehabContact)
+phoneBookInstance.save(contact: ehabContact)
 
-var kodecoContact = Contact(name: "Kodeco", phone: "0112233445")
 var samePhoneBook = phoneBookInstance
-samePhoneBook.saveContact(kodecoContact)
+var kodecoContact = Contact(name: "Kodeco", phone: "0112233445")
+samePhoneBook.save(contact: kodecoContact)
 
-print(samePhoneBook.findContact(keyword: "01"))
+print(samePhoneBook.search(keyword: "01"))
 
-print(phoneBookInstance.findContact(keyword: "o"))
+print(phoneBookInstance.search(keyword: "o"))
+
+var kodecoContactCopy = kodecoContact
+kodecoContactCopy.name = "Kodeco Copy"
+
+print(kodecoContact.name)
+print(kodecoContactCopy.name)
