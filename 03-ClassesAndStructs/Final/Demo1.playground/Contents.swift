@@ -69,9 +69,8 @@ var samePhoneBook = phoneBookInstance
 var kodecoContact = Contact(name: "Kodeco", phone: "0112233445")
 samePhoneBook.save(contact: kodecoContact)
 
-print(samePhoneBook.search(keyword: "01"))
-
-print(phoneBookInstance.search(keyword: "o"))
+dump(samePhoneBook.search(keyword: "01"))
+dump(phoneBookInstance.search(keyword: "o"))
 
 var kodecoContactCopy = kodecoContact
 kodecoContactCopy.name = "Kodeco Copy"
