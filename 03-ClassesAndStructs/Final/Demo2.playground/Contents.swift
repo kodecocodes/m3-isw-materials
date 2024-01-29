@@ -64,7 +64,7 @@ do {
   print("Start Scope - 3")
   var variable1 = ExampleClass()
   do {
-    print("Start Scope - 3 : Inner Scope - 1")
+    print("Start Scope - 3 : Inner Scope - 1 \(variable1)")
     variable1 = ExampleClass()
   }
   print("End Scope - 3 : Inner Scope - 1")
@@ -72,28 +72,28 @@ do {
 print("End Scope - 3")
 print("------------------------")
 
-var boolValue = false
+let boolValue = false
 MemoryLayout.size(ofValue: boolValue)
 
-var intValue: Int = 10
+let intValue: Int = 10
 MemoryLayout.size(ofValue: intValue)
 
-var floatValue: Float = 10
+let floatValue: Float = 10
 MemoryLayout.size(ofValue: floatValue)
 
-var doubleValue: Double = 10
+let doubleValue: Double = 10
 MemoryLayout.size(ofValue: doubleValue)
 
-var int8Value: Int8 = 10
+let int8Value: Int8 = 10
 MemoryLayout.size(ofValue: int8Value)
 
-var int16Value: Int16 = 10
+let int16Value: Int16 = 10
 MemoryLayout.size(ofValue: int16Value)
 
-var int32Value: Int32 = 10
+let int32Value: Int32 = 10
 MemoryLayout.size(ofValue: int32Value)
 
-var int64Value: Int64 = 10
+let int64Value: Int64 = 10
 MemoryLayout.size(ofValue: int64Value)
 
 struct TwoIntsStruct {
