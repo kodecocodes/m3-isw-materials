@@ -61,12 +61,14 @@ class PhoneBook {
   }
 }
 
-var phoneBookInstance = PhoneBook()
-var ehabContact = Contact(name: "Ehab Amer", phone: "0123456789")
+let phoneBookInstance = PhoneBook()
+let ehabContact = Contact(name: "Ehab Amer", phone: "0123456789")
 phoneBookInstance.save(contact: ehabContact)
+//phoneBookInstance.storedContacts.append(ehabContact)
 
-var samePhoneBook = phoneBookInstance
-var kodecoContact = Contact(name: "Kodeco", phone: "0112233445")
+let samePhoneBook = phoneBookInstance
+let kodecoContact = Contact(name: "Kodeco", phone: "0112233445")
+
 samePhoneBook.save(contact: kodecoContact)
 
 dump(samePhoneBook.search(keyword: "01"))
