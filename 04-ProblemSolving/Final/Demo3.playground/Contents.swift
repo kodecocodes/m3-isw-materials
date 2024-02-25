@@ -1,3 +1,11 @@
+/// Use this function to calculate the sum of every number between two numbers.
+/// For example, the sum of every number between 1 and 10 is 55
+/// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+///
+/// - Parameters:
+///   - minValue: The minimum number in the equation
+///   - maxValue: The maximum number in the equation
+/// - Returns: The collected sum as a Double
 func calculateSum(minValue: Int, maxValue: Int) -> Double {
   var sum: Double = 0
   let doubleVal1 = Double(minValue)
