@@ -37,7 +37,7 @@ func calculateSum(minValue: Int, maxValue: Int) -> Int {
   return sum
 }
 
-calculateSum(minValue: -10, maxValue: 10)
-calculateSum(minValue: 0, maxValue: -100)
+calculateSum(minValue: 0, maxValue: 10)
+calculateSum(minValue: 0, maxValue: 100)
 
 
