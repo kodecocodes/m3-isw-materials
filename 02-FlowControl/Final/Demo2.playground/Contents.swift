@@ -30,20 +30,20 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-var fibonancciSeries: [Int] = []
+var fibonacciSeries: [Int] = []
 
 for index in 0...10 {
 //  if index == 0 {
-//    fibonancciSeries.append(0)
+//    fibonacciSeries.append(0)
 //  } else if index == 1 {
-//    fibonancciSeries.append(1)
+//    fibonacciSeries.append(1)
   if index < 2 {
-    fibonancciSeries.append(index)
+    fibonacciSeries.append(index)
   } else {
-    let element1 = fibonancciSeries[fibonancciSeries.count-1]
-    let element2 = fibonancciSeries[fibonancciSeries.count-2]
-    fibonancciSeries.append(element1 + element2)
+    let element1 = fibonacciSeries[fibonacciSeries.count-1]
+    let element2 = fibonacciSeries[fibonacciSeries.count-2]
+    fibonacciSeries.append(element1 + element2)
   }
 }
 
-print(fibonancciSeries)
+print(fibonacciSeries)

@@ -35,21 +35,21 @@ func getFibonancciElement(at inputIndex: Int) -> Int {
     return 0
   }
 
-  var fibonancciSeries: [Int] = []
+  var fibonacciSeries: [Int] = []
 
   for index in 0...inputIndex {
     if index < 2 {
-      fibonancciSeries.append(index)
+      fibonacciSeries.append(index)
     } else {
-      let element1 = fibonancciSeries[fibonancciSeries.count-1]
-      let element2 = fibonancciSeries[fibonancciSeries.count-2]
-      fibonancciSeries.append(element1 + element2)
+      let element1 = fibonacciSeries[fibonacciSeries.count-1]
+      let element2 = fibonacciSeries[fibonacciSeries.count-2]
+      fibonacciSeries.append(element1 + element2)
     }
   }
 
-//  print(fibonancciSeries)
+//  print(fibonacciSeries)
 
-  return fibonancciSeries[inputIndex]
+  return fibonacciSeries[inputIndex]
 }
 
 print(getFibonancciElement(at: 11))
